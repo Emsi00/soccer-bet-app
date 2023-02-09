@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
 
-function App() {
+import "./App.css";
+
+import LoginFrame from "./SoccerBetPage/LoginPage/LoginFrame";
+import MainFrame from "./SoccerBetPage/LoggedMainPage/MainFrame";
+
+const App = () => {
+  const [isLogged, setIsLogged] = useState(false);
+  const getState = (value) => {
+    setIsLogged(value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mainDiv">
+      {!isLogged && <LoginFrame onSave={getState} />}
+      {isLogged && <MainFrame />}
     </div>
   );
-}
+};
 
 export default App;

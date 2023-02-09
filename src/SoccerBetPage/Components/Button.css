@@ -1,0 +1,38 @@
+.loginBy {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-family: cursive;
+  transition: 1s;
+}
+.facebookBtn:hover {
+  transition: 1s;
+  background-color: rgba(0, 0, 255, 0.7);
+  cursor: pointer;
+}
+.instagramBtn:hover {
+  transition: 1s;
+  background-color: rgba(231, 14, 188, 0.7);
+  cursor: pointer;
+}
+.loginButton {
+  width: 50%;
+  height: 70%;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.loginButton:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  scale: 1.2;
+  border: 2px solid black;
+}

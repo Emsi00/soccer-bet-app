@@ -1,0 +1,74 @@
+.friendsBar {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  background-color: rgb(25, 25, 134);
+  width: 20%;
+  height: 100vh;
+  transition: 1s;
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.friendsBar.turnedOFF {
+  width: 0%;
+  transition: 1s;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.myProfile {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  animation: appear 1s;
+}
+.friendImageDiv {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+.friendInfoDiv {
+  width: 70%;
+  height: 100%;
+}
+.friendNameDiv {
+  width: 100%;
+  height: 60%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+.friendOfflineDiv {
+  width: 100%;
+  height: 40%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.friendPhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}

@@ -1,0 +1,10 @@
+.contentAboutUs {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+}
