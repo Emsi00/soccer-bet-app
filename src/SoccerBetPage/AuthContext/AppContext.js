@@ -22,9 +22,9 @@ const AppContext = React.createContext({
     },
   ],
   friends: [
-    { nickname: "Robal", offline: 7, photo: "kot.jpg" },
-    { nickname: "Zordon", offline: 32, photo: "zordon.jpg" },
-    { nickname: "Cipek", offline: 58, photo: "pies.jpg" },
+    { nickname: "Mateusz", offline: 7, photo: "kot.jpg" },
+    { nickname: "Oliwia", offline: 32, photo: "zordon.jpg" },
+    { nickname: "Maja", offline: 58, photo: "pies.jpg" },
   ],
 });
 
